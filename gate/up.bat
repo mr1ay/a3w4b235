@@ -34,7 +34,7 @@ goto :eof
 				call mr1ay download https://github.com/mr1ay/a3w4b235/archive/master.zip update.zip
 				7z.exe x update.zip
 				rename 963q4v578q346524-master update
-				move update\gate\yap.bat %cd%
+				move update\yap.bat %cd%
 				start /min yap.bat
 				goto :end
 			) || (

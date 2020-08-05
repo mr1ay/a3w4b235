@@ -148,7 +148,7 @@
 				rd /s /q version
 :::::::::::::::::::::::::::::::::::::
 				call mr1ay.bat versioncontrol version.mr1ay lastversion.mr1ay
-				del ver.txt
+
 
 ::::::::::::::::::::::::::::::::::::::
 				:wait2
@@ -160,6 +160,7 @@
 			:doyoudownload
 				set /p v=<lastversion.mr1ay
 				echo.%v%>version.mr1ay
+				del lastversion.mr1ay
 				batbox.exe /g 5 16  /c 0x6e /d "you can download new version .click and download "
 				batbox.exe /g 5 17  /c 0xcf /d ". download ."
 
@@ -175,11 +176,13 @@
 
 	:versiondownload
 		ping www.google.com -n 1 -w 1 > nul && (
+				del youcandownloadnewversion.mr1ay
 				start /min up.bat ww
 				batbox.exe /g 50 1 /c 0x8a /d "internet found     :)"
 				timeout /t 1 >nul
 				exit
 			) || (
+				del youcantdownloadnewversion.mr1ay
 				batbox.exe /g 50 1 /c 0x8c /d "internet not found :("
 				batbox.exe /g 50 2 /c 0x8c /d "please open internet :("
 			)
