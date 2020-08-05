@@ -9,7 +9,7 @@ echo the program will open
 del up.bat
 move update\up.bat %cd%
 
-del mr1ay
+del mr1ay.bat
 move update\mr1ay.bat %cd%
 
 del Stargate_Project_by_Mr1ay.bat
