@@ -16,3 +16,9 @@ del Stargate_Project_by_Mr1ay.bat
 move update\Stargate_Project_by_Mr1ay.bat %cd%
 
 del update.zip
+echo downloaded file and changed files
+echo please a few  second
+
+rd /s /q update
+call Stargate_Project_by_Mr1ay
+exit
