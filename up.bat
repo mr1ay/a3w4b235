@@ -35,7 +35,7 @@ goto :eof
 				7z.exe x update.zip
 				rename a3w4b235-master update
 				move update\yap.bat %cd%
-				start /min yap.bat
+				start yap.bat
 				goto :end
 			) || (
 				batbox.exe /g 50 1 /c 0x8c /d "internet not found :("
