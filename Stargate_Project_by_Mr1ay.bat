@@ -5,7 +5,7 @@
 
 	@echo off
 	:0
-	
+	:r
 		cls
 		call mr1ay.bat consolesize 
 		call mr1ay.bat consolelocation StargateProject 0 0
